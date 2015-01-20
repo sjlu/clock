@@ -1,3 +1,9 @@
 [submodule "Alamofire"]
 	path = Alamofire
 	url = https://github.com/Alamofire/Alamofire.git
+[submodule "SwiftKeychain"]
+	path = SwiftKeychain
+	url = https://github.com/yankodimitrov/SwiftKeychain.git
+[submodule "KPTimePicker"]
+	path = KPTimePicker
+	url = git@github.com:atomicdevices/KPTimePicker.git

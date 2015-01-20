@@ -9,11 +9,40 @@
 /* Begin PBXBuildFile section */
 		153B972C1A6E087400C3A7A1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153B97171A6E065600C3A7A1 /* Alamofire.framework */; };
 		153B972D1A6E087400C3A7A1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 153B97171A6E065600C3A7A1 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		153B97321A6E094900C3A7A1 /* UIColor+clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B97311A6E094900C3A7A1 /* UIColor+clock.swift */; };
+		153B97341A6E097200C3A7A1 /* UIFont+clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B97331A6E097200C3A7A1 /* UIFont+clock.swift */; };
+		153B97361A6E09B200C3A7A1 /* ProximaNova-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B97351A6E09B200C3A7A1 /* ProximaNova-Reg.ttf */; };
+		153B97381A6E09BC00C3A7A1 /* ProximaNova-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B97371A6E09BC00C3A7A1 /* ProximaNova-Light.ttf */; };
+		153B97561A6E0AD200C3A7A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B97551A6E0AD100C3A7A1 /* Router.swift */; };
+		153B975B1A6E0BB200C3A7A1 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B975A1A6E0BB200C3A7A1 /* AppViewController.swift */; };
+		153B975D1A6E0BCC00C3A7A1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B975C1A6E0BCC00C3A7A1 /* SplashViewController.swift */; };
+		153B97601A6E0C0A00C3A7A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B975F1A6E0C0A00C3A7A1 /* LoginViewController.swift */; };
 		1571223F1A6E000C001B5842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571223E1A6E000C001B5842 /* AppDelegate.swift */; };
 		157122411A6E000C001B5842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157122401A6E000C001B5842 /* ViewController.swift */; };
 		157122461A6E000C001B5842 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157122451A6E000C001B5842 /* Images.xcassets */; };
 		157122491A6E000C001B5842 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157122471A6E000C001B5842 /* LaunchScreen.xib */; };
 		157122551A6E000D001B5842 /* clockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157122541A6E000D001B5842 /* clockTests.swift */; };
+		15C0A90A1A6E0D970052D211 /* ArchiveKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0A9041A6E0D970052D211 /* ArchiveKey.swift */; };
+		15C0A90B1A6E0D970052D211 /* GenericKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0A9051A6E0D970052D211 /* GenericKey.swift */; };
+		15C0A90C1A6E0D970052D211 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0A9061A6E0D970052D211 /* Keychain.swift */; };
+		15C0A90D1A6E0D970052D211 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0A9071A6E0D970052D211 /* KeychainItem.swift */; };
+		15C0A90E1A6E0D970052D211 /* KeychainQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0A9081A6E0D970052D211 /* KeychainQuery.swift */; };
+		15C0A90F1A6E0D970052D211 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0A9091A6E0D970052D211 /* KeychainService.swift */; };
+		15C0A9231A6E0E860052D211 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C0A9121A6E0E860052D211 /* Categories.m */; };
+		15C0A9241A6E0E860052D211 /* checkmark_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A9141A6E0E860052D211 /* checkmark_icon_white.png */; };
+		15C0A9251A6E0E860052D211 /* checkmark_icon_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A9151A6E0E860052D211 /* checkmark_icon_white@2x.png */; };
+		15C0A9261A6E0E860052D211 /* picker_wheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A9161A6E0E860052D211 /* picker_wheel@2x.png */; };
+		15C0A9271A6E0E860052D211 /* picker_wheel_ip4.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A9171A6E0E860052D211 /* picker_wheel_ip4.png */; };
+		15C0A9281A6E0E860052D211 /* picker_wheel_ip4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A9181A6E0E860052D211 /* picker_wheel_ip4@2x.png */; };
+		15C0A9291A6E0E860052D211 /* round_backarrow_big-high.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A9191A6E0E860052D211 /* round_backarrow_big-high.png */; };
+		15C0A92A1A6E0E860052D211 /* round_backarrow_big-high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A91A1A6E0E860052D211 /* round_backarrow_big-high@2x.png */; };
+		15C0A92B1A6E0E860052D211 /* round_backarrow_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A91B1A6E0E860052D211 /* round_backarrow_big.png */; };
+		15C0A92C1A6E0E860052D211 /* round_backarrow_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A91C1A6E0E860052D211 /* round_backarrow_big@2x.png */; };
+		15C0A92D1A6E0E860052D211 /* schedule_image_moon-high.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A91D1A6E0E860052D211 /* schedule_image_moon-high.png */; };
+		15C0A92E1A6E0E860052D211 /* schedule_image_moon-high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A91E1A6E0E860052D211 /* schedule_image_moon-high@2x.png */; };
+		15C0A92F1A6E0E860052D211 /* schedule_image_sun-high.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A91F1A6E0E860052D211 /* schedule_image_sun-high.png */; };
+		15C0A9301A6E0E860052D211 /* schedule_image_sun-high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0A9201A6E0E860052D211 /* schedule_image_sun-high@2x.png */; };
+		15C0A9311A6E0E860052D211 /* KPTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C0A9221A6E0E860052D211 /* KPTimePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +106,14 @@
 
 /* Begin PBXFileReference section */
 		153B97101A6E065600C3A7A1 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		153B97311A6E094900C3A7A1 /* UIColor+clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+clock.swift"; sourceTree = "<group>"; };
+		153B97331A6E097200C3A7A1 /* UIFont+clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+clock.swift"; sourceTree = "<group>"; };
+		153B97351A6E09B200C3A7A1 /* ProximaNova-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Reg.ttf"; sourceTree = "<group>"; };
+		153B97371A6E09BC00C3A7A1 /* ProximaNova-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.ttf"; sourceTree = "<group>"; };
+		153B97551A6E0AD100C3A7A1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		153B975A1A6E0BB200C3A7A1 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		153B975C1A6E0BCC00C3A7A1 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		153B975F1A6E0C0A00C3A7A1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		157122391A6E000C001B5842 /* clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1571223D1A6E000C001B5842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1571223E1A6E000C001B5842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +123,30 @@
 		1571224E1A6E000D001B5842 /* clockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		157122531A6E000D001B5842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		157122541A6E000D001B5842 /* clockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockTests.swift; sourceTree = "<group>"; };
+		15C0A9041A6E0D970052D211 /* ArchiveKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveKey.swift; sourceTree = "<group>"; };
+		15C0A9051A6E0D970052D211 /* GenericKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericKey.swift; sourceTree = "<group>"; };
+		15C0A9061A6E0D970052D211 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		15C0A9071A6E0D970052D211 /* KeychainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		15C0A9081A6E0D970052D211 /* KeychainQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainQuery.swift; sourceTree = "<group>"; };
+		15C0A9091A6E0D970052D211 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		15C0A9111A6E0E860052D211 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		15C0A9121A6E0E860052D211 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
+		15C0A9141A6E0E860052D211 /* checkmark_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark_icon_white.png; sourceTree = "<group>"; };
+		15C0A9151A6E0E860052D211 /* checkmark_icon_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark_icon_white@2x.png"; sourceTree = "<group>"; };
+		15C0A9161A6E0E860052D211 /* picker_wheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picker_wheel@2x.png"; sourceTree = "<group>"; };
+		15C0A9171A6E0E860052D211 /* picker_wheel_ip4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picker_wheel_ip4.png; sourceTree = "<group>"; };
+		15C0A9181A6E0E860052D211 /* picker_wheel_ip4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picker_wheel_ip4@2x.png"; sourceTree = "<group>"; };
+		15C0A9191A6E0E860052D211 /* round_backarrow_big-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_backarrow_big-high.png"; sourceTree = "<group>"; };
+		15C0A91A1A6E0E860052D211 /* round_backarrow_big-high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_backarrow_big-high@2x.png"; sourceTree = "<group>"; };
+		15C0A91B1A6E0E860052D211 /* round_backarrow_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_backarrow_big.png; sourceTree = "<group>"; };
+		15C0A91C1A6E0E860052D211 /* round_backarrow_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_backarrow_big@2x.png"; sourceTree = "<group>"; };
+		15C0A91D1A6E0E860052D211 /* schedule_image_moon-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedule_image_moon-high.png"; sourceTree = "<group>"; };
+		15C0A91E1A6E0E860052D211 /* schedule_image_moon-high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedule_image_moon-high@2x.png"; sourceTree = "<group>"; };
+		15C0A91F1A6E0E860052D211 /* schedule_image_sun-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedule_image_sun-high.png"; sourceTree = "<group>"; };
+		15C0A9201A6E0E860052D211 /* schedule_image_sun-high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedule_image_sun-high@2x.png"; sourceTree = "<group>"; };
+		15C0A9211A6E0E860052D211 /* KPTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTimePicker.h; sourceTree = "<group>"; };
+		15C0A9221A6E0E860052D211 /* KPTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTimePicker.m; sourceTree = "<group>"; };
+		15C0A9361A6E0EBA0052D211 /* clock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "clock-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +178,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		153B97591A6E0B7B00C3A7A1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				153B975A1A6E0BB200C3A7A1 /* AppViewController.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		153B975E1A6E0BCF00C3A7A1 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				153B975C1A6E0BCC00C3A7A1 /* SplashViewController.swift */,
+				153B975F1A6E0C0A00C3A7A1 /* LoginViewController.swift */,
+			);
+			name = Splash;
+			sourceTree = "<group>";
+		};
 		157122301A6E000C001B5842 = {
 			isa = PBXGroup;
 			children = (
@@ -139,11 +217,19 @@
 		1571223B1A6E000C001B5842 /* clock */ = {
 			isa = PBXGroup;
 			children = (
+				15C0A9101A6E0E860052D211 /* KPTimePicker */,
+				15C0A9031A6E0D970052D211 /* Keychain */,
+				153B975E1A6E0BCF00C3A7A1 /* Splash */,
+				153B97591A6E0B7B00C3A7A1 /* App */,
 				1571223E1A6E000C001B5842 /* AppDelegate.swift */,
 				157122401A6E000C001B5842 /* ViewController.swift */,
 				157122451A6E000C001B5842 /* Images.xcassets */,
 				157122471A6E000C001B5842 /* LaunchScreen.xib */,
 				1571223C1A6E000C001B5842 /* Supporting Files */,
+				153B97311A6E094900C3A7A1 /* UIColor+clock.swift */,
+				153B97331A6E097200C3A7A1 /* UIFont+clock.swift */,
+				153B97551A6E0AD100C3A7A1 /* Router.swift */,
+				15C0A9361A6E0EBA0052D211 /* clock-Bridging-Header.h */,
 			);
 			path = clock;
 			sourceTree = "<group>";
@@ -151,6 +237,8 @@
 		1571223C1A6E000C001B5842 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				153B97351A6E09B200C3A7A1 /* ProximaNova-Reg.ttf */,
+				153B97371A6E09BC00C3A7A1 /* ProximaNova-Light.ttf */,
 				1571223D1A6E000C001B5842 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -171,6 +259,53 @@
 				157122531A6E000D001B5842 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15C0A9031A6E0D970052D211 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				15C0A9041A6E0D970052D211 /* ArchiveKey.swift */,
+				15C0A9051A6E0D970052D211 /* GenericKey.swift */,
+				15C0A9061A6E0D970052D211 /* Keychain.swift */,
+				15C0A9071A6E0D970052D211 /* KeychainItem.swift */,
+				15C0A9081A6E0D970052D211 /* KeychainQuery.swift */,
+				15C0A9091A6E0D970052D211 /* KeychainService.swift */,
+			);
+			name = Keychain;
+			path = SwiftKeychain/SwiftKeychain/Keychain;
+			sourceTree = SOURCE_ROOT;
+		};
+		15C0A9101A6E0E860052D211 /* KPTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				15C0A9111A6E0E860052D211 /* Categories.h */,
+				15C0A9121A6E0E860052D211 /* Categories.m */,
+				15C0A9131A6E0E860052D211 /* Images */,
+				15C0A9211A6E0E860052D211 /* KPTimePicker.h */,
+				15C0A9221A6E0E860052D211 /* KPTimePicker.m */,
+			);
+			name = KPTimePicker;
+			path = KPTimePicker/KPTimePicker;
+			sourceTree = SOURCE_ROOT;
+		};
+		15C0A9131A6E0E860052D211 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				15C0A9141A6E0E860052D211 /* checkmark_icon_white.png */,
+				15C0A9151A6E0E860052D211 /* checkmark_icon_white@2x.png */,
+				15C0A9161A6E0E860052D211 /* picker_wheel@2x.png */,
+				15C0A9171A6E0E860052D211 /* picker_wheel_ip4.png */,
+				15C0A9181A6E0E860052D211 /* picker_wheel_ip4@2x.png */,
+				15C0A9191A6E0E860052D211 /* round_backarrow_big-high.png */,
+				15C0A91A1A6E0E860052D211 /* round_backarrow_big-high@2x.png */,
+				15C0A91B1A6E0E860052D211 /* round_backarrow_big.png */,
+				15C0A91C1A6E0E860052D211 /* round_backarrow_big@2x.png */,
+				15C0A91D1A6E0E860052D211 /* schedule_image_moon-high.png */,
+				15C0A91E1A6E0E860052D211 /* schedule_image_moon-high@2x.png */,
+				15C0A91F1A6E0E860052D211 /* schedule_image_sun-high.png */,
+				15C0A9201A6E0E860052D211 /* schedule_image_sun-high@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,8 +421,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C0A9241A6E0E860052D211 /* checkmark_icon_white.png in Resources */,
+				15C0A9251A6E0E860052D211 /* checkmark_icon_white@2x.png in Resources */,
 				157122491A6E000C001B5842 /* LaunchScreen.xib in Resources */,
+				153B97361A6E09B200C3A7A1 /* ProximaNova-Reg.ttf in Resources */,
+				15C0A9281A6E0E860052D211 /* picker_wheel_ip4@2x.png in Resources */,
+				15C0A9261A6E0E860052D211 /* picker_wheel@2x.png in Resources */,
+				15C0A92C1A6E0E860052D211 /* round_backarrow_big@2x.png in Resources */,
+				15C0A92D1A6E0E860052D211 /* schedule_image_moon-high.png in Resources */,
+				15C0A92E1A6E0E860052D211 /* schedule_image_moon-high@2x.png in Resources */,
+				15C0A9291A6E0E860052D211 /* round_backarrow_big-high.png in Resources */,
+				15C0A92A1A6E0E860052D211 /* round_backarrow_big-high@2x.png in Resources */,
+				15C0A9271A6E0E860052D211 /* picker_wheel_ip4.png in Resources */,
+				153B97381A6E09BC00C3A7A1 /* ProximaNova-Light.ttf in Resources */,
+				15C0A92B1A6E0E860052D211 /* round_backarrow_big.png in Resources */,
 				157122461A6E000C001B5842 /* Images.xcassets in Resources */,
+				15C0A9301A6E0E860052D211 /* schedule_image_sun-high@2x.png in Resources */,
+				15C0A92F1A6E0E860052D211 /* schedule_image_sun-high.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +455,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153B97321A6E094900C3A7A1 /* UIColor+clock.swift in Sources */,
+				15C0A9311A6E0E860052D211 /* KPTimePicker.m in Sources */,
+				153B97341A6E097200C3A7A1 /* UIFont+clock.swift in Sources */,
+				15C0A90E1A6E0D970052D211 /* KeychainQuery.swift in Sources */,
+				153B975B1A6E0BB200C3A7A1 /* AppViewController.swift in Sources */,
+				15C0A90B1A6E0D970052D211 /* GenericKey.swift in Sources */,
 				157122411A6E000C001B5842 /* ViewController.swift in Sources */,
+				15C0A90C1A6E0D970052D211 /* Keychain.swift in Sources */,
+				153B975D1A6E0BCC00C3A7A1 /* SplashViewController.swift in Sources */,
+				15C0A90A1A6E0D970052D211 /* ArchiveKey.swift in Sources */,
+				15C0A90D1A6E0D970052D211 /* KeychainItem.swift in Sources */,
+				153B97601A6E0C0A00C3A7A1 /* LoginViewController.swift in Sources */,
+				15C0A90F1A6E0D970052D211 /* KeychainService.swift in Sources */,
 				1571223F1A6E000C001B5842 /* AppDelegate.swift in Sources */,
+				15C0A9231A6E0E860052D211 /* Categories.m in Sources */,
+				153B97561A6E0AD200C3A7A1 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +599,7 @@
 				INFOPLIST_FILE = clock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "clock/clock-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -446,6 +611,7 @@
 				INFOPLIST_FILE = clock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "clock/clock-Bridging-Header.h";
 			};
 			name = Release;
 		};

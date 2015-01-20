@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  clock
+//  director
 //
-//  Created by Steven Lu on 1/19/15.
+//  Created by Steven Lu on 1/2/15.
 //  Copyright (c) 2015 Steven Lu. All rights reserved.
 //
 
@@ -12,9 +12,48 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var splashNavController: UINavigationController?
+    var appViewController: AppViewController?
 
+    func loadSplash() {
+        window?.rootViewController = self.splashNavController;
+    }
+
+    func loadApp() {
+        window?.rootViewController = self.appViewController;
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+        // window init
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.backgroundColor = UIColor.lightGrayColor()
+        window?.makeKeyAndVisible()
+
+        // globals
+        UINavigationBar.appearance().tintColor = UIColor.primaryColor()
+        UILabel.appearance().font = UIFont.primaryFontWithSize(16)
+
+        // splash nav init
+        splashNavController = UINavigationController()
+        var splashViewController = SplashViewController()
+        splashNavController?.pushViewController(splashViewController, animated: false)
+
+        // app nav init
+        appViewController = AppViewController()
+
+        // choose which to load
+        let authTokenKey = GenericKey(keyName: "authentication-token")
+        let keychain = Keychain()
+        if let authToken = keychain.get(authTokenKey).item?.value {
+            loadApp()
+        } else {
+            loadSplash()
+        }
+        self.window?.makeKeyAndVisible()
+
+        //        println(UIFont.familyNames())
+
         // Override point for customization after application launch.
         return true
     }
@@ -40,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    
 }
 
