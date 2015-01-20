@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class AppViewController: UIViewController, KPTimePickerDelegate {
 
@@ -43,6 +44,17 @@ class AppViewController: UIViewController, KPTimePickerDelegate {
     }
 
     func timePicker(timePicker: KPTimePicker!, selectedDate date: NSDate!) {
+        var dateFormatter = NSDateFormatter();
+        dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "HHmm";
+
+        var timeString = dateFormatter.stringFromDate(date).lowercaseString;
+
+        Alamofire.request(
+            Router.SetAlarm(timeString)
+            ).responseJSON { (request, response, data, error) in
+        }
+
         return
     }
 

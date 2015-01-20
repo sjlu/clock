@@ -14,10 +14,12 @@ enum Router: URLRequestConvertible {
 //    static let baseURLString = "http://localhost:3000"
 
     case Login(String, String)
+    case SetAlarm(String)
 
     var method: Alamofire.Method {
         switch self {
         case .Login: return .POST
+        case .SetAlarm: return .PUT
         default: return .GET
         }
     }
@@ -25,6 +27,7 @@ enum Router: URLRequestConvertible {
     var path: String {
         switch self {
         case .Login: return "/login/token"
+        case .SetAlarm: return "/api/users/me/alarm"
         default: return ""
         }
     }
@@ -47,6 +50,8 @@ enum Router: URLRequestConvertible {
         switch self {
         case .Login(let username, let password):
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: ["username":username, "password":password]).0
+        case .SetAlarm(let timeString):
+            return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: ["alarm": timeString]).0
         default:
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: nil).0
         }
